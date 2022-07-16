@@ -1,0 +1,4 @@
+div.sigma-container {
+  position: absolute !important;
+  display: grid;
+}
