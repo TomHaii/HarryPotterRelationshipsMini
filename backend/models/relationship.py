@@ -1,5 +1,3 @@
-import json
-
 from models.character_relationships import CharacterRelationships
 
 
@@ -15,5 +13,3 @@ class Relationship:
         return {
             self._viewpoint_char: self.target_char_to_scores_dict
         }
-
-
