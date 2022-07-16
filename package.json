@@ -1,0 +1,8 @@
+{
+    "name": "harrypotterapp",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": {
+      "start": "cd frontend && npm start"
+    }
+  }
