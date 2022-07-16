@@ -23,14 +23,14 @@ export const Main = () => {
       <div style={{ float: "left" }}>
         <ProSidebar>
           <Menu iconShape="square">
-            <MenuItem
+            {/* <MenuItem
               onClick={() => {
                 goToAboutPage();
               }}
             >
               About
-            </MenuItem>
-            <SubMenu title="Characters">
+            </MenuItem> */}
+            <SubMenu title="Characters" open={true}>
               {results.map((char, index) => (
                 <MenuItem
                   onClick={() => {
