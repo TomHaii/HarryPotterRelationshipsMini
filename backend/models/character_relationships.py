@@ -12,11 +12,11 @@ class CharacterRelationships:
             view_char_to_target_char_score_set = {}
             upper_bound = 1
             for app_index in viewpoint_char.appearances_by_book[book_num + 1]:
-                indlow = app_index - INDEX_BOUND_GAP_CONST
-                indhigh = app_index + INDEX_BOUND_GAP_CONST
+                ind_low = app_index - INDEX_BOUND_GAP_CONST
+                ind_high = app_index + INDEX_BOUND_GAP_CONST
 
                 for index in target_char.appearances_by_book[book_num + 1]:
-                    if indlow <= index <= indhigh:
+                    if ind_low <= index <= ind_high:
                         instances += 1
                         view_char_to_target_char_score_list.append([app_index, index])
 

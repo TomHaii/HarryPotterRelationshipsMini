@@ -24,12 +24,12 @@ if __name__ == '__main__':
 
     # Create all the character objects and initialize their appearances dict based by books.
     for character in all_hp_characters:
-        viewpoint_char_relationships_dict[character] = Relationship(character)
         first_name_alias = character.split(' ')[0]
         new_char = Character(character)
         new_char.add_aliases([first_name_alias])
         new_char.populate_appearances_dict(hp_books_list)
         chars_objects.append(new_char)
+        viewpoint_char_relationships_dict[character] = Relationship(character)
 
     # Go over every character and generate the relationship between every character in the books
     for viewpoint_char in chars_objects:
